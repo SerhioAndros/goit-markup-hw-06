@@ -449,10 +449,12 @@ a {
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover,
-.close-button:focus {
-  background-color: #afb1b8;
-  border-color: var(--text-color-secondary);
+.close-button-logo {
+  fill: #000000;
+}
+.close-button:hover .close-button-logo,
+.close-button:focus .close-button-logo {
+  fill: var(--text-color-accent);
 }
 .is-hidden {
   opacity: 0;
@@ -602,14 +604,16 @@ a {
 .footer-container {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: baseline;
 }
 .footer-addresses {
   margin-right: 70px;
 }
 /* ===== графика */
-
+.company-social-links-wrapper {
+  margin-right: 93px;
+}
 .call-to-join {
   color: var(--text-color-additional);
   text-transform: uppercase;
@@ -648,4 +652,63 @@ a {
 }
 .company-social-links:not(:last-child) {
   margin-right: 10px;
+}
+/* ======= подписка на рассылку */
+.mailing-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 570px;
+}
+.mailing-subscription-call {
+  color: var(--text-color-additional);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+.mailing-subscription-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.user-mailing-email {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  width: 358px;
+}
+.mailing-subscription-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px 10px 28px;
+  background-color: var(--text-color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color-additional);
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscription-button-icon {
+  margin-left: 10px;
+}
+.mailing-subscription-button:hover {
+  background-color: var(--button-color-hover);
 }
