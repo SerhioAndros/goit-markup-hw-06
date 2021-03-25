@@ -407,6 +407,35 @@
                         <use href="./images/sprite.svg#icon-close-black"></use>
                     </svg>
                 </button>
+                <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+                <form action="#" class="callback-form">
+                    <label class="callback-form-field" for="user-name">Имя</label>
+                    <div class="callback-form-input-wrapper">
+                        <input class="callback-form-input" type="text" id="user-name" name="user-name" required>
+                        <svg class="callback-form-input-logo" width="18" height="18">
+                            <use href="./images/sprite.svg#modal-person"></use>
+                        </svg>
+                    </div>
+                    <label class="callback-form-field" for="user-tel">Телефон</label>
+                    <div class="callback-form-input-wrapper">
+                        <input class="callback-form-input" type="tel" id="user-tel" name="user-tel" required>
+                        <svg class="callback-form-input-logo" width="18" height="18">
+                            <use href="./images/sprite.svg#modal-tel"></use>
+                        </svg>
+                    </div>
+                    <label class="callback-form-field" for="user-email">Почта</label>
+                    <div class="callback-form-input-wrapper">
+                        <input class="callback-form-input" type="email" id="user-email" name="user-email">
+                        <svg class="callback-form-input-logo" width="18" height="18">
+                            <use href="./images/sprite.svg#modal-email"></use>
+                        </svg>
+                    </div>
+                    <label class="callback-form-field" for="user-comment">Комментарий</label>
+                    <textarea name="user-comment" id="user-comment" class="callback-form-comments" placeholder="Введите текст"></textarea>
+                    <input type="checkbox" id="user-terms-agree" name="terms-confirmed" class="check-terms-agreement visually-hidden">
+                    <label class="user-terms-descr" for="user-terms-agree">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="terms-link"> Условия договора</a></label>
+                    <button type="submit" class="callback-form-button">Отправить</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
